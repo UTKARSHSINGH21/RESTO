@@ -1,0 +1,82 @@
+<DOCTYPE html>
+
+    <head>
+        <title>
+            Reserve a table
+        </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    </head>
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <style>
+        body{
+            max-height: 100vh;
+        }
+        div.logo
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .box
+        {
+            margin-bottom: 5px;
+        }
+        .form{
+            border: 1px solid #ffca70;
+        }
+    </style>
+
+    <script>
+    
+    </script>
+    <body>
+        <%- include("partials/header") -%>
+        <div class="container">
+           
+
+            <form class="form" name="book" onkeyup="return table_book()">
+
+                <div class=head>
+                    <h2> Dining with us? Reserve a Table </h2> <br>
+                </div>
+
+                <div class="firstlast name">
+                    <p> Your Name<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                    <label><input type="TEXT" id="name" name="name" placeholder="First Name and Last Name"
+                            class="text box"></label>
+                    <p id= "nameErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Email<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="Email">
+                    <label><input type="text" name="email" placeholder="Email Address" class="text box"></label>
+                    <p id= "emailErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Phone Number<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="pass">
+                    <label><input type="text" name="phno" placeholder="Phone Number" class="text box" maxlength="10">
+                    </label><br>
+                    <p id = "phoneErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Date<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="date-time">
+                    <input type="date" id="date" name="date-time" class="text box" min="2023-03-30">
+                    </label><br>
+                </div>
+                
+
+                <p> Table for?<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="re pass">
+                    <label><input type="number" name="pass" class="text box" min="1" max="10" placeholder="No. of People" inputmode="numeric" required></label> <br>
+                </div> <br>
+
+                <input type="submit" name="signin" class="text btn" value="Book Table" >    
+
+            </form>
+        </div>
+    </body>

@@ -1,0 +1,50 @@
+<DOCTYPE html>
+
+	<head>
+		<title>Sign In</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<script src="https://kit.fontawesome.com/c3c4bc64da.js" crossorigin="anonymous"></script>
+</head>
+	<style>
+	
+
+		form{
+			width: 20vw;
+			margin: auto;
+		}
+
+	</style>
+
+	<body>
+		<%- include("partials/header") -%>
+			<form class="form" name="signForm" style="padding: 20px 30px 40px;" onkeyup="return sign_validate()" method="post">
+				<div class=head>
+					<h2> Hi, Welcome back</h2>
+				</div>
+				<div>
+					<p>Email<sup style="color: #ffca70;"><b>*</b></sup></p>
+					<label><input type="Email" name="emails" placeholder="Email Address" class="text box"></label>
+					<p id="emailErr" style="color: #ffca70;"></p>
+				</div>
+
+				<div>
+					<p>Password<sup style="color: #ffca70;"><b>*</b></sup> </p>
+					<label><input type="password" name="pass" placeholder="Password" class="text box">
+					</label>
+					<p id="passErr" style="color: #ffca70;"></p>
+				</div>
+
+				<div class="rememberme-forgot">
+					<label><input type="checkbox" name="remember" class="check">Remember me</label>
+					<a href="forgot_pass" style="color: #ffca70;"> Forgot password?</a>
+				</div>
+
+				<input type="submit" class="btn" value="Sign in">
+				<br><br>
+				<hr> <br> <br>
+
+				<p style="font-weight: 100;">New to RESTO? </p>
+				<input type="button" class="btn" value="Create your account" onclick="newacc();">
+			</form>
+	</body>

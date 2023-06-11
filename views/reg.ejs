@@ -1,0 +1,65 @@
+<DOCTYPE html>
+
+    <head>
+        <title>Register</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <style>
+  
+        .form
+        {
+            width: 25vw;
+            padding: 20px 30px;
+        }
+        input[type="submit"]
+        {
+            font-weight: 500;
+        }
+    </style>
+
+    <body>
+        <%- include("partials/header") -%>
+        <div class="container">
+            <form class="form" name="regForm" onkeyup="return reg()" autocomplete="off">
+
+                <div class=head>
+                    <h2> Create Account </h2> <br>
+                </div>
+
+                <div class="firstlast name">
+                    <p> Your Name<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                    <label><input type="TEXT" id="name" name="name" placeholder="First Name and Last Name"
+                            class="text box"></label>
+                <p id="nameErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Email<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="Email">
+                    <label><input type="text" name="email" placeholder="Email Address" class="text box"></label>
+                    <p id="emailErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Password<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="pass">
+                    <label><input type="password" name="pass" placeholder="at least 8 characters" class="text box">
+                    </label><br>
+                    <p id="passErr" style="color: #ffca70;"></p>
+                </div>
+
+                <p> Re-enter Password<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                <div class="re pass">
+                    <label><input type="password" name="cpass" class="text box"></label> <br>
+                    <p id="cpassErr" style="color: #ffca70;"></p>
+                </div> <br>
+
+                <input type="submit" name="signin" class="text btn" value="Create your RESTO account">
+                <br>
+                <hr><br>
+
+                <p style="font-weight: 100;"> Already have an account? <a href="Signin"> Sign In.</a></p>
+
+            </form>
+        </div>
+    </body>

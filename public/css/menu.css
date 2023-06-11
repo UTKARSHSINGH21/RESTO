@@ -1,0 +1,124 @@
+	* {
+		margin: 0;
+		padding: 0;
+		user-select: none;
+	}
+
+	body {
+		background-color: #91091E;
+
+	}
+
+	.mainbody {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		margin: 0;
+	}
+
+
+
+	h1 {
+		font-family: "famosa";
+		font-size: 60px;
+		color: #ffca70;
+	}
+
+	h2 {
+		font-family: "karla";
+		font-size: 20px;
+		color: antiquewhite;
+		margin: 10px 0px;
+		text-align: center;
+
+	}
+
+
+	/* .maincontent {
+		display: flex;
+		flex-direction: column;
+		padding: 10%;
+	}
+ */
+
+	.menu{
+		display: grid;
+		grid-template-columns: repeat(3, 350px);
+		gap: 3rem;
+		margin: 2rem 0;
+		justify-content: center;
+	}
+
+	.food {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		border: 1px solid #ffca70;
+		border-radius: 7px;
+		transform-origin: center;
+	}
+
+
+	.food input {
+		padding: 5px;
+		border-radius: 20px;
+		background-color: #91091E;
+		border: 1px solid #ffca70;
+		font-size: 20px;
+		font-family: "awanzaman";
+		font-weight: bold;
+		color: #ffca70;
+		width: 50%;
+
+	}
+
+	p {
+		color: white;
+		text-align: center;
+
+	}
+
+	.food input:hover {
+		background-color: #ffca70;
+		color: #91091E;
+	}
+
+	.pricebtn {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+		justify-self: flex-end;
+	}
+
+	.cuisine-type {
+		margin-top: 30px;
+		display: flex;
+		width: 100vw;
+		justify-content: center;
+	}
+
+	.cuisine-type li {
+		font-size: 20px;
+		margin-left: 20px;
+
+	}
+
+	.cuisine-type li a:hover {
+
+		color: #ffca70;
+	}
+
+	img {
+		display: inline;
+	}
+
+
+	.cuisine-type li
+	{
+		color: white;
+	}
+
+	.cuisine-type
+	{
+		margin-bottom: 5rem;
+	}

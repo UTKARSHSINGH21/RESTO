@@ -1,0 +1,176 @@
+/* Sign IN CSS + Reg*/
+* {
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+	line-height: 19px;
+	background-color: #91091E;
+	color: antiquewhite;
+	width: 100vw;
+}
+
+
+.form {
+	border: 1px solid antiquewhite;
+	border-radius: 5px;
+	padding: 20px 40px;
+}
+
+.container {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main-content {
+	display: flex;
+}
+
+.text {
+	padding: 12px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 15px;
+}
+.btn {
+
+	border: 1px solid #ffca70;
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	width: 100%;
+	font-weight: lighter;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #91091E;
+	color: #ffca70;
+
+}
+
+.btn:hover {
+	background-color: #ffca70;
+	color: #91091E;
+}
+
+.check {
+	margin: 10px 20px 20px 0px;
+	padding-left: 10px;
+}
+
+.box {
+	border: 2px solid #91091E;
+	padding-top: 10px;
+	outline: none;
+
+}
+
+.box:hover {
+	border: 2px solid #ffca70;
+	outline: none;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 100;
+	padding: 20px 0px;
+
+}
+
+hr {
+	opacity: 50%;
+	width: 50%;
+	margin: auto;
+	color: #ffca70;
+
+}
+
+p {
+	font-size: 15px;
+	padding-bottom: 10px;
+	font-weight: 400;
+	letter-spacing: 0.01cm;
+}
+
+p a {
+	text-decoration: none;
+	padding: 10px;
+	color: #ffca70;
+}
+
+.rememberme-forgot {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+}
+
+.rememberme-forgot a {
+	text-decoration: none;
+}
+
+.rememberme-forgot a:hover {
+	text-decoration: underline;
+}
+
+/* Contact Form */
+
+
+.logo {
+	padding: 20px;
+}
+
+.info p {
+	color: #ffca70;
+}
+
+.main {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+
+}
+
+.locat,
+.emailcontact,
+.phcontact,
+.whatsapp {
+	display: flex;
+	align-items: baseline;
+}
+
+.infos {
+	display: inline;
+}
+
+.icons {
+	margin-right: 20px;
+	color: #ffca70;
+}
+
+.info {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 20px;
+	margin-right: 30px;
+
+}
+
+.contact-text {
+	padding: 12px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	font-size: 15px;
+	width: 100%;
+	font-family: "karla", sans-serif;
+}
+
+textarea {
+	font-family: sans-serif;
+}

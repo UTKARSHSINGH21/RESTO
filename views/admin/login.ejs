@@ -1,0 +1,42 @@
+<DOCTYPE html>
+	<head>
+		<title>
+			RESTO Admin Sign-In
+		</title>
+
+	</head>
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<style>
+		.form{
+			padding: 20px;
+			margin: auto;
+			width: 20%;
+		}
+	
+	</style>
+	<body>
+		<%- include("../partials/header") -%>
+		<div class="container">
+			
+			<form class="form">
+				<div class=head>
+					<h2> Hi, Admin</h2>
+				</div>
+				<div>
+					<p>Admin ID<sup style="color: #ffca70;"><b>*</b></sup></p>
+					<label><input type="Email" name="sap" placeholder="Enter your Id" class="text box"
+							required></label><br><br>
+				</div>
+
+				<div>
+					<p>Password<sup style="color: #ffca70;"><b>*</b></sup> </p>
+					<label><input type="password" name="pass" placeholder="Enter the password" class="text box" required>
+					</label><br><br>
+				</div>
+
+				<input type="button" name="signin" class="btn" value="Sign in" onclick="admin();"> <br><br>
+				 
+			</form>
+		</div>
+	</body

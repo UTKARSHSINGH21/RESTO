@@ -1,0 +1,122 @@
+<DOCTYPE html>
+
+	<head>
+		<title>
+			Contact
+		</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	</head>
+
+
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<script src="https://kit.fontawesome.com/c3c4bc64da.js" crossorigin="anonymous"></script>
+	<style>
+		body{
+			max-width: 100vw;
+		}
+		h2 {
+			font-weight: 100;
+			font-size: 20px;
+			padding: 0px 0px;
+			margin-bottom: 20px;
+		}
+		.item1 {
+			align-items: baseline;
+			margin: 0px 0px 0px 10px;
+		}
+	
+		.locat, .whatsapp, .phcontact, .emailcontact, .infos, .map
+		{
+			align-items: flex-start;
+			margin-bottom: 5px;
+		}
+	
+	</style>
+
+	<body>
+
+		<div class="mainbody">
+			<%- include("partials/header") -%>
+			</div>
+			<div class="main">
+				<div class="info" style="border: 1px solid #ffca70;">
+					<div class="locat">
+						<div class="icons">
+							<i class="fa-sharp fa-solid fa-location-dot fa-2x" style="margin-right: 10px;"></i>
+						</div>
+						<div class="infos">
+							<h2>Location </h2>
+							<p>Plot 47, Pedder Road, Mumbai South - 400001</p>
+						</div>
+					</div>
+
+					<div class="emailcontact">
+						<div class="icons">
+							<i class="fa-solid fa-envelope fa-2x"></i>
+						</div>
+						<div class="infos">
+							<h2>Email </h2>
+							<p>customer@restomumbai.in</p>
+						</div>
+					</div>
+
+					<div class="phcontact">
+						<div class="icons">
+							<i class="fa-solid fa-phone fa-2x"></i>
+
+						</div>
+						<div class="infos">
+							<h2>Phone number </h2>
+							<p>022 - 494873</p>
+						</div>
+
+					</div>
+
+					<div class="whatsapp" style="margin-bottom: 18px;">
+						<div class="icons">
+							<i class="fa-brands fa-whatsapp fa-2x"></i>
+						</div>
+						<div class="infos">
+							<h2>Whatsapp </h2>
+							<p>+91 - 9838233373</p>
+						</div>
+					</div>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.0954892337277!2d72.80944079999999!3d18.9713898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce7694d33ccf%3A0x244e8c32748adfe0!2sPedder%20Rd%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1676611703656!5m2!1sen!2sin" width="400" height="230" style="border:0; border-radius: 5px; border-color: #ffca70;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+				<div>
+					<form class="form" name="ContactForm" onkeyup="return contact_onvalidate()" autocomplete="off" method="post">
+						<div class="contact">
+							<div class=head>
+								<h1 style="text-align: center; font-weight: 100; font-size: 30px"> Contact </h2> <br>
+							</div>
+
+							<div class="firstlast name">
+								<p> Name<sup style="color: #ffca70;"><b>*</b></sup> </p>
+								<label><input type="TEXT" id="name" name="userName" placeholder="First Name and Last Name" class="contact-text box"></label>
+							</div>
+							<p id="nameErr" style="color: #ffca70 ; font-size: 80%;"></p>
+
+							<p> Email<sup style="color: #ffca70;"><b>*</b></sup> </p>
+							<div class="Email">
+								<label><input type="text" name="userEmail" placeholder="Email address" class="text box"></label>
+							</div>
+							<p id="emailErr" style="color: #ffca70; font-size: 80%;"></p>
+
+							<p> Message<sup style="color: #ffca70; font-size: 80%;"><b>*</b></sup> </p>
+							<div class="pass">
+								<label><textarea name="userMessage" placeholder="Enter Your Message..." class="text box" rows="10" cols="40" style="resize: none;"></textarea>
+								</label><br>
+							</div>
+							<p id="feedErr" style="color: #ffca70; font-size: 80%;"></p>
+							<button type="submit" name="send" class="text btn">Send Message</button>
+							<br>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>

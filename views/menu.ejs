@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Our Menu</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/c3c4bc64da.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/menu.js"></script>
+	<link rel="stylesheet" href="/css/menu.css">
+</head>
+
+
+<style>
+	#cart {
+		display: contents !important;
+	}
+
+	.socials {
+		display: none;
+	}
+</style>
+
+
+<body>
+	<div class="mainbody">
+		<%- include("partials/header"); -%>
+			<main>
+				<div class="main-content">
+
+					<div class="menuhead">
+						<h1 style="text-align: center;"> Our Menu </h1>
+					</div>
+
+					<div class="cuisine-type item2">
+
+						<nav>
+							<ul>
+								<li id="all">All</li>
+								<li id="NorthL">North Indian</li>
+								<li id="BengaliL">Bengali</li>
+								<li id="GujaratiL">Gujarati</li>
+								<li id="MarathiL">Maharashtrian</li>
+								<li id="southL">South Indian</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="menu">
+						<div class="food">
+							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+							<h2> FOOD_North</h2>
+							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+							<div class="pricebtn">
+								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+								<input type="button" value="Add To Cart">
+							</div>
+						</div>
+
+						<div class="food">
+							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+							<h2> FOOD_North</h2>
+							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+							<div class="pricebtn">
+								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+								<input type="button" value="Add To Cart">
+							</div>
+						</div>
+
+						<div class="food">
+							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+							<h2> FOOD_North</h2>
+							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+							<div class="pricebtn">
+								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+								<input type="button" value="Add To Cart">
+							</div>
+						</div>
+
+
+						<div class="food">
+							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+							<h2> FOOD_North</h2>
+							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+							<div class="pricebtn">
+								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+								<input type="button" value="Add To Cart">
+							</div>
+						</div>
+
+
+
+						<div class="food">
+							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+							<h2> FOOD_Bengali</h2>
+							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+							<div class="pricebtn">
+								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+								<input type="button" value="Add To Cart">
+							</div>
+						</div>
+
+						<% foodItems.forEach(function(item){ %>
+							<div class="food">
+								<img src= "/Images/<%= item.img %>" width=200px style="padding: 0px 70px;">
+								<h2> <%= item.foodName %></h2>
+								<p> <%= item.desc %></p>
+								<div class="pricebtn">
+									<p style="font-size: 20px; align-self:center;"> ₹<%= item.price %> </p>
+									<input type="button" value="Add To Cart">
+								</div>
+							</div>
+						<%	}) %>
+						</div>
+					</div>
+				</div>
+</body>
+
+</html>

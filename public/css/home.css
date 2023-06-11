@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #91091E;
+	overflow: hidden;
+		
+}
+.mainbody
+{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.img{
+	display: flex;
+	z-index: -1;
+	position: absolute;
+	overflow: hidden;
+	justify-content: space-between;
+	opacity: 9%;
+}
+
+.img1
+{
+	padding-right: 200px;
+	padding-bottom: 80px;
+	padding-top: 30px;
+}
+
+.main-content
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	margin: auto;
+	height: 80vh;
+}
+.left-content
+{
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+	margin: 4% 6%;
+}
+
+.btn{
+	display: flex;
+}
+.button
+{
+	width:35%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid #ffca70;
+	font-size: 25px;
+	background: none;
+	color: #ffca70;
+	font-family: "awanzaman";
+	font-weight: bold;
+	margin: 20px 20px 20px 0;
+}
+
+.button:hover
+{
+	background-color: #ffca70;
+	color: #91091E;
+	border-radius: 30px;
+}
+
+
+h1{
+	font-size: 100px;
+	letter-spacing: 0.1cm;
+	font-family: "famosa";
+}
+h2{
+	font-size: 85px;
+	font-family: "tt moons bold";
+	letter-spacing: 0.005cm;
+
+}
+
+h2,h3,p{
+	padding-bottom: 20px;
+}
+
+h1,h2{
+	color: white;
+}
+h3
+{
+	font-size: 40px;
+	font-family: "awanzaman";
+	font-weight: 600;
+	color: #ffca70;
+}
+
+p{
+	letter-spacing: 0.03cm;
+}

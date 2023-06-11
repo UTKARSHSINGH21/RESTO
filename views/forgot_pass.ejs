@@ -1,0 +1,49 @@
+<DOCTYPE html>
+
+	<head>
+		<title>Forgot password</title>
+	</head>
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+		h2 {
+			padding: 25px 0px;
+		}
+	</style>
+
+	<body>
+		<%- include("partials/header") -%>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html" style="color: #ffca70; font-weight: bold; text-decoration: none;"><img
+						src="Images/LOGO.png" width="100px"></a></h1>
+				<br>
+			</div>
+			<form class="form" name="forgot_form" style="padding: 20px 30px 40px;" onkeyup="return forgopass()">
+				<div class=head>
+					<h2> Forgot Password?</h2>
+				</div>
+				<div>
+					<p>Email<sup style="color: #ffca70;"><b>*</b></sup></p>
+					<label><input type="Email" name="email" placeholder="Email Address" class="text box"></label>
+					<p id="emailErr" style="color: #ffca70;"></p>
+				</div>
+
+				<div class="OTP" style="display: none;">
+					<p>OTP<sup style="color: #ffca70;"><b>*</b></sup> </p>
+					<label><input type="text" name="otp" placeholder="Enter OTP" class="text box" required
+							inputmode="numeric">
+					</label>
+					<p id=otpErr></p><br><br>
+				</div>
+
+				<input type="submit" id="send" name="signin" class="btn" value="Send OTP"> <br>
+
+				<div class="OTP" style="display:none">
+					<p id="otpErr" style="color: #ffca70;"></p>
+					<hr> <br> <br>
+					<input type="button" name="signin" class="btn" value="Resend OTP" onclick="otp();">
+				</div>
+			</form>
+		</div>
+	</body>

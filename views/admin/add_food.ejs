@@ -1,0 +1,78 @@
+<DOCTYPE html>
+
+    <head>
+        <title>
+            Admin Add Food
+        </title>
+
+    </head>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        select {
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: white;
+            width: 100%;
+        }
+
+        textarea{
+            outline: #ffca70;
+            font-family: sans-serif;
+            font-size: 15px;
+            padding:5px;
+        }
+
+        input[type="file"]::file-selector-button {
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }  
+
+    </style>
+
+    <body>
+        <%- include("../partials/header"); -%>
+        <div class="container">
+           
+            <form class="form" autocomplete="off" action="/add_food" method="post">
+                <div class=head>
+                    <h2> Add Item</h2>
+                </div>
+
+                <div>
+                    <p>Food Name<sup style="color: #ffca70;"><b>*</b></sup></p>
+                    <label><input type="text" placeholder="Food Name" class="text box" name = "name" required></label><br><br>
+                </div>
+
+                <div>
+                    <label> Cuisine Type </label> <br><br>
+                    <select name="cusine">
+                        <option value="Select">Select</option>
+                        <option value="North">North Indian</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Maharashtrian">Maharashtrian</option>
+                        <option value="South">South Indian</option>
+                    </select><br><br>
+
+                </div>
+
+                <div style="justify-content: space-between;">
+                    <label> Select Image </label>
+                    <input type="file" accept="Image/*" name="img">
+                </div>
+                <div>
+                    <p>Price<sup style="color: #ffca70;"><b>*</b></sup></p>
+                    <label><input type="text" placeholder="₹" class="text box" required  name="price"></label><br>
+                </div>
+                <div>
+                    <p>Description<sup style="color: #ffca70;"><b>*</b></sup> </p>
+                    <label><textarea rows="5" cols="50" required style="resize: none;" placeholder="Less than 15 words" name="description"></textarea>
+                    </label><br><br>
+                </div>
+
+                <button type="submit" class="btn" name="button">Add to Menu</button>
+            </form>
+        </div>
+    </body

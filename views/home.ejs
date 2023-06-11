@@ -1,0 +1,46 @@
+<!doctype html>
+<html style="font-family: 'Aboreto', cursive; color: #faecd6;">
+
+<head>
+	<title> RESTO - Indian Cuisine </title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="/css/home.css">
+	<script src="https://kit.fontawesome.com/c3c4bc64da.js" crossorigin="anonymous"></script>
+<body>
+	<script>
+		function opmenu()
+		{
+			window.open("menu");
+		}
+		function optable()
+		{
+			window.open("table_book");
+		}
+	</script>
+	<div class="img">
+		<img src="/images/bg3.png" width="700px" class=img1>
+	</div>
+
+	<%- include("partials/header") -%>
+	<div class="mainbody">
+	
+		<main>
+			<div class="main-content">
+				<div class="left-content">
+					<h1> Indian</h1>
+					<h2> Cuisine</h2>
+					<h3> Best Restaurant in town</h3>
+					<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+						Discover authentic Indian flavors in Mumbai at our restaurant. Enjoy a menu crafted with fresh,
+						locally sourced ingredients in a warm and inviting atmosphere. Indulge in the best of India.
+					<div class=btn>
+						<button class="button" onclick="opmenu();"> View Menu </button>
+						<button class="button" onclick="optable();"> Book a table </button>
+					</div>
+				</div>
+				<div class="right-content">
+					<img src="Images/samosa.png" width="800px" height="600px">
+				</div>
+			</div>
+	</div>
+</body>

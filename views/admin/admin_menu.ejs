@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminDB</title>
+</head>
+<script>
+    function userdb()
+    {
+        
+    }
+
+    function menu()
+    {
+        window.open("/admin")
+    }
+</script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .forms
+    {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .button
+    {
+        padding: 20px 15px;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: 15px;
+        background-color: #ffca70;
+        border: 1px solid #ffca70;
+        color:#91091E;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    .button:hover{
+        color: #ffca70;
+        background-color: #91091E;
+    }
+</style>
+<body style="background:#91091E">
+    <%- include("../partials/header") -%>
+    <div class="forms" style="width: 100vw; height: 100vh;">
+    <form>
+        <button type="button" class="button" onclick="userdb()">Update</button>
+        <button type="button" class="button" onclick="menu()">Add</button>
+    </form> 
+</div>   
+</body>
+</html>

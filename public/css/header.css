@@ -1,0 +1,68 @@
+
+ul{
+	list-style: none;
+}
+
+li
+{
+	text-decoration: none;
+	font-size: 20px;
+	display: inline;
+	font-family: 'Karla', sans-serif;
+	letter-spacing: 1px;
+}
+li a{
+	text-decoration: none;
+	color: white;
+	padding: 8px 4px;
+	margin: 0px 20px;
+	
+}
+
+li a:hover
+{	
+	transform-origin: center;
+	border-bottom: 2px solid #ffca70;
+
+}
+
+
+.item1 a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
+}
+
+.titlebar
+{
+	display: flex;
+	font-size: 20px;
+	justify-content: space-between;
+	font-family: "awanzaman";
+	align-items: center;
+	margin: 10px 80px 0 80px;
+	
+}
+.fa-lg
+{
+	color:#ffca70;
+}
+
+#cart
+{
+	position: relative;
+}
+
+#cartQty {
+	display: inline;
+	background-color:#ffca70;
+	color: #91091E;
+	font-size: 13px;
+	position: absolute;
+	right : 100px;
+	 top: 40px;
+	border-radius: 50%;
+	padding: 0px 4px;
+	font-weight: bold;
+}

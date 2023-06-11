@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminDB</title>
+</head>
+<script>
+    function userdb()
+    {
+        
+    }
+
+    function menu()
+    {
+        window.open("admin_menu.html")
+    }
+</script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .forms
+    {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .button
+    {
+        padding: 20px 15px;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: 15px;
+        background-color: #ffca70;
+        border: 1px solid #ffca70;
+        color:#91091E;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    h1{
+        font-size: 40px;
+        color: #ffca70;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .button:hover{
+        color: #ffca70;
+        background-color: #91091E;
+    }
+</style>
+
+<body style="background:#91091E">
+    <%- include("../partials/header") -%>
+    <div class="forms" style="width: 100vw; height: 100vh;">
+    <form>
+        <h1 style="text-align: center;"> Hi, Admin</h1>
+        <button type="button" class="button" onclick="userdb()">User Database</button>
+        <button type="button" class="button" onclick="menu()">Menu</button>
+        <button type="button" class="button" onclick="menu()">Table Booking Info</button>
+    </form> 
+</div>   
+</body>
+</html>

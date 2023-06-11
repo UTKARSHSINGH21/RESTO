@@ -5,177 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Carts</title>
+	<title>Cart</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/menu.css">
 	<script src="https://kit.fontawesome.com/c3c4bc64da.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 
 </head>
 
 <style>
-	* {
-		margin: 0;
-		padding: 0;
-		user-select: none;
-	}
-
-	body {
-		background-color: #91091E;
-
-	}
-
-	.mainbody {
-		display: flex;
-		flex-direction: column;
-		width: 100vw;
-	}
-
-	ul {
-		list-style: none;
-	}
-
-	li {
-		text-decoration: none;
-		padding: 41px 10px;
-		font-size: 20px;
-		display: inline;
-		font-family: 'Karla', sans-serif;
-		letter-spacing: 1px;
-		color: white;
-		cursor: pointer;
-		display: inline;
-	}
-
-	li a {
-		text-decoration: none;
-		color: white;
-		padding: 22px;
-
-	}
-
-	.item1 a {
-		text-decoration: none;
-		font-family: 'Karla', sans-serif;
-		font-weight: bold;
-	}
-
-
-	.titlebar {
-		display: flex;
-		font-size: 20px;
-		justify-content: space-between;
-		font-family: "awanzaman";
-		margin: 0px 81px;
-		align-items: center;
-		margin-top: 10px;
-
-	}
-
-	h1 {
-		font-family: "famosa";
-		font-size: 60px;
-		color: #ffca70;
-	}
-
-	h2 {
-		font-family: "karla";
-		font-size: 20px;
-		color: antiquewhite;
-		margin: 10px 0px;
-		text-align: center;
-
-	}
-
-
-	.maincontent {
-		display: flex;
-		flex-direction: column;
-		padding: 10%;
-		margin: auto;
-		width: 100vw;
-	}
-
-	.menu {
-		display: inline flex;
-		gap: 3vw;
-		flex-wrap: wrap;
-		justify-content: center;
-
-	}
-
-	.menumain {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-
-	.food {
-		display: inline flex;
-		flex-direction: column;
-		padding: 20px;
-		border: 1px solid #ffca70;
-		margin: 70px 0px;
-		border-radius: 7px;
-		width: 18%;
-		transform-origin: center;
-
-
-	}
-
-
-	.food input {
-		padding: 5px;
-		border-radius: 20px;
-		background-color: #91091E;
-		border: 1px solid #ffca70;
-		font-size: 20px;
-		font-family: "awanzaman";
-		font-weight: bold;
-		color: #ffca70;
-		width: 50%;
-
-	}
-
-	p {
-		color: white;
-		text-align: center;
-
-	}
-
-	.food input:hover {
-		background-color: #ffca70;
-		color: #91091E;
-	}
-
-	.pricebtn {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 30px;
-		justify-self: flex-end;
-	}
-
-	.cuisine-type {
-		margin-top: 30px;
-		display: flex;
-		width: 100vw;
-		justify-content: center;
-	}
-
-	.cuisine-type li {
-		font-size: 20px;
-		margin-left: 20px;
-
-	}
-
-	.cuisine-type li a:hover {
-
-		color: #ffca70;
-	}
-
-	img {
-		display: inline
-	}
-
 	tr{
 		color: #ffca70;
 		font-size: 20px;
@@ -188,19 +26,7 @@
 
 <body>
 	<div class="mainbody">
-		<div class="titlebar">
-			<div class="item1">
-				<a href="/"><img src="/Images/LOGO.png" height="100px"></a>
-			</div>
-			<div class="item2">
-
-				<nav>
-					<ul>
-						<li> <a href="menu">View Menu</a></li>
-						<li> <a href=#order>Order</a></li>
-					</ul>
-				</nav>
-			</div>
+		<%- include("partials/header") -%>
 		</div>
 		<main>
 			<div class="main-content">
@@ -217,6 +43,7 @@
 						<th width="20%">Quantity</th>
 						<th width="20%">Total</th>
 					</tr>
+				<%
 					<tr>
 						<td></td>
 

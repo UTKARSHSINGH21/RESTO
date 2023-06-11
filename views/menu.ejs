@@ -49,63 +49,21 @@
 					</div>
 
 					<div class="menu">
-						<div class="food">
-							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
 
-							<h2> FOOD_North</h2>
-							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
-							<div class="pricebtn">
-								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
-								<input type="button" value="Add To Cart">
+						<% for( let i = 0; i < 5; i++){ %>
+							<div class="food">
+								<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+
+								<h2> FOOD_North</h2>
+								<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
+								<div class="pricebtn">
+									<p style="font-size: 20px; align-self:center;"> ₹1000</p>
+									<input type="button" value="Add To Cart">
+								</div>
 							</div>
-						</div>
 
-						<div class="food">
-							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
+						<% } %>
 
-							<h2> FOOD_North</h2>
-							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
-							<div class="pricebtn">
-								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
-								<input type="button" value="Add To Cart">
-							</div>
-						</div>
-
-						<div class="food">
-							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
-
-							<h2> FOOD_North</h2>
-							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
-							<div class="pricebtn">
-								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
-								<input type="button" value="Add To Cart">
-							</div>
-						</div>
-
-
-						<div class="food">
-							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
-
-							<h2> FOOD_North</h2>
-							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
-							<div class="pricebtn">
-								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
-								<input type="button" value="Add To Cart">
-							</div>
-						</div>
-
-
-
-						<div class="food">
-							<img src="Images/samosa.png" width=200px style="padding: 0px 70px;">
-
-							<h2> FOOD_Bengali</h2>
-							<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, harum?</p>
-							<div class="pricebtn">
-								<p style="font-size: 20px; align-self:center;"> ₹1000</p>
-								<input type="button" value="Add To Cart">
-							</div>
-						</div>
 
 						<% foodItems.forEach(function(item){ %>
 							<div class="food">

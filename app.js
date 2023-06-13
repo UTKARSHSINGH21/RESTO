@@ -33,8 +33,8 @@ app.get("/:test", function(req, res)
 
 app.get("/admin/:test", function(req, res)
 {
-
-    res.redirect("/error404");
+    res.render("admin/" + req.params.test);
+    console.log("admin/" + req.params.test);
 })
 
 

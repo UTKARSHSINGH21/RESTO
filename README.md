@@ -9,8 +9,7 @@ Assuming you have already installed node in your computer. Here are the steps to
 Step: 0 - To use this project after cloning it 
           Write the following in your CLI (Make sure to change your working directory to RESTO): 
 
-Step: 1 - npm install  *This commmand was install all packages required.
-          This will install all the required packages that are essential to run the website.
+Step: 1 - npm install  *This will install all the required packages that are necessary to run the website.
 
 Step: 2 - nodemon app.js
 
